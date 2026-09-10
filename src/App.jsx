@@ -5,7 +5,17 @@ function App() {
     <div>
       {/* Cabeçalho principal com navegacao semantica */}
       <header>
-        <h1>Meu Portfólio Acadêmico</h1>
+
+        <div className="perfil">
+          <img src="https://via.placeholder.com/100" alt="Minha foto de perfil" className="avatar"/>
+          <div>
+            <h1>Suianne Costa Ramos Martins</h1>
+            <p>Aluna de Desenvolvimento FullStack | 2026.1</p>
+            <p className="bio"> Portfóilio de revisão para a unidade 1</p>
+            <a href="#atividades" className="btn-principal">Ver Atividades</a>
+          </div>
+        </div>
+
         <nav>
           <ul>
             <li><a href="#inicio">Início</a></li>
@@ -67,6 +77,21 @@ function App() {
                 </div>
               </div>
             </article>
+
+            {/* Card 4 (Passo Atual) */}
+            <article className="card">
+              <div className="card-image">
+                <img src="https://via.placeholder.com/286x180?text=Cabeçalho+e+Identidade" alt="Evidência do Passo 4" />
+              </div>
+              <div className="card-body">
+                <h3>Passo 4: Criar cabeçalho e identidade</h3>
+                <p>Adicionado cabeçalho completo com nome do autor, turma, avatar, texto descritivo e botão de ação para navegação rápida até a lista de entregas.</p>
+                <div className="card-footer">
+                  <span className="card-tech">Tecnologia: HTML / CSS</span>
+                </div>
+              </div>
+            </article>
+            
           </div>
         </section>
       </main>
