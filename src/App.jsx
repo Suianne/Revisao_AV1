@@ -1,29 +1,13 @@
 import './App.css';
+import Cabecalho from './components/Cabecalho';
 
 function App() {
   return (
     <div>
       {/* Cabeçalho principal com navegacao semantica */}
       <header>
-
-        <div className="perfil">
-          <img src="https://via.placeholder.com/100" alt="Minha foto de perfil" className="avatar"/>
-          <div>
-            <h1>Suianne Costa Ramos Martins</h1>
-            <p>Aluna de Desenvolvimento FullStack | 2026.1</p>
-            <p className="bio"> Portfóilio de revisão para a unidade 1</p>
-            <a href="#atividades" className="btn-principal">Ver Atividades</a>
-          </div>
-        </div>
-
-        <nav>
-          <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#atividades">Atividades</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </nav>
+        {/* Componente Cabeçalho*/}
+        <Cabecalho />
       </header>
 
       {/* Conteudo principal da pagina */}
@@ -174,6 +158,21 @@ function App() {
                 <p>Implementadas media queries para adaptar o layout em telas de 360px, 768px e 1440px, ajustando o menu, perfil e a grade de cartões sem quebras de layout.</p>
                 <div className="card-footer">
                   <span className="card-tech">Tecnologia: CSS3 Media Queries</span>
+                </div>
+              </div>
+            </article>
+
+
+            {/* Card 11 */}
+            <article className="card">
+              <div className="card-image">
+                <img src="https://via.placeholder.com/286x180?text=Componente+Cabecalho" alt="Evidência do Passo 11" />
+              </div>
+              <div className="card-body">
+                <h3>Passo 11: Criar o componente Cabecalho</h3>
+                <p>Estrutura do cabeçalho isolada em src/components/Cabecalho.jsx, reduzindo o acoplamento no App.jsx e promovendo reuso e organização do código.</p>
+                <div className="card-footer">
+                  <span className="card-tech">Tecnologia: React / JSX</span>
                 </div>
               </div>
             </article>
