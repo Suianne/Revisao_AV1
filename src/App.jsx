@@ -12,6 +12,7 @@ function App() {
 
   const concluidas = atividades.filter((item) => item.status === 'Concluída').length;
   const total = 30;
+  const percentual = Math.min(100, Math.max(0, Math.round((concluidas / total) * 100)));
 
   const atividadesFiltradas = atividades.filter((atividade) => {
     const atendeFiltroTech =
@@ -38,10 +39,42 @@ function App() {
       {/* Conteudo principal da pagina */}
       <main>
         <section id="atividades">
-          <h2>Lista de Atividades</h2>
+          <div className="cabecalho-secao">
+            <h2>Lista de Atividades</h2>
+            <p className="contador-progresso">
+              Progresso: <strong>{concluidas}</strong> de {total} concluídas ({percentual}%)
+            </p>
+          </div>
 
-          {/*Botões do Filtro de tecnologia*/}
+          {/* Barra de Progresso Acessível (Passo 20) */}
+          <div className="barra-progresso-container">
+            <div
+              className="barra-progresso-trilho"
+              role="progressbar"
+              aria-valuenow={percentual}
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-label="Progresso de conclusão das atividades do portfólio"
+            >
+              <div
+                className="barra-progresso-preenchimento"
+                style={{ width: `${percentual}%` }}
+              ></div>
+            </div>
+          </div>
 
+          {/* Campo de Busca por Texto */}
+          <div className="busca-container">
+            <input
+              type="text"
+              placeholder="Buscar atividade por título ou descrição..."
+              value={busca}
+              onChange={(e) => setBusca(e.target.value)}
+              className="input-busca"
+            />
+          </div>
+
+          {/* Botões do Filtro de Tecnologia */}
           <div className="filtro-container">
             {tecnologias.map((tech) => (
               <button
@@ -54,19 +87,26 @@ function App() {
             ))}
           </div>
 
-          <div className="grid-cards">
-            {atividadesFiltradas.map((atividade) => (
-              <CardAtividade
-                key={atividade.id}
-                numero={atividade.numero}
-                titulo={atividade.titulo}
-                descricao={atividade.descricao}
-                tecnologia={atividade.tecnologia}
-                imagem={atividade.imagem}
-                status={atividade.status}
-              />
-            ))}
-          </div>
+          {/* Lista de Cartões */}
+          {atividadesFiltradas.length > 0 ? (
+            <div className="grid-cards">
+              {atividadesFiltradas.map((atividade) => (
+                <CardAtividade
+                  key={atividade.id}
+                  numero={atividade.numero}
+                  titulo={atividade.titulo}
+                  descricao={atividade.descricao}
+                  tecnologia={atividade.tecnologia}
+                  imagem={atividade.imagem}
+                  status={atividade.status}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="mensagem-vazia">
+              <p>Nenhuma atividade encontrada com os termos informados.</p>
+            </div>
+          )}
         </section>
 
         <section id="sobre">

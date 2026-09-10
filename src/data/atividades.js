@@ -171,5 +171,14 @@ export const atividades = [
     tecnologia: "React / JavaScript",
     imagem: "https://via.placeholder.com/286x180?text=Contador+Progresso",
     status: "Concluída"
+  },
+  {
+    id: 20,
+    numero: 20,
+    titulo: "Criar barra de progresso",
+    descricao: "Implementação de barra de progresso visual e acessível (com atributos ARIA), sincronizada com o cálculo de atividades concluídas.",
+    tecnologia: "React / HTML5 ARIA",
+    imagem: "https://via.placeholder.com/286x180?text=Barra+de+Progresso",
+    status: "Concluída"
   }
 ]

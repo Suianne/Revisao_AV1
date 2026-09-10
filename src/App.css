@@ -257,3 +257,23 @@ nav a {
   border: 1px solid var(--border-color, #d0d7de);
   color: var(--text-color);
 }
+
+.barra-progresso-container {
+  margin-bottom: var(--spacing-md, 16px);
+}
+
+.barra-progresso-trilho {
+  width: 100%;
+  height: 12px;
+  background-color: var(--border-color, #e0e0e0);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.barra-progresso-preenchimento {
+  height: 100%;
+  background-color: var(--primary-color, #007bff);
+  border-radius: 6px;
+  transition: width 0.4s ease-in-out;
+}
+
