@@ -78,7 +78,7 @@ function App() {
               </div>
             </article>
 
-            {/* Card 4 (Passo Atual) */}
+            {/* Card 4*/}
             <article className="card">
               <div className="card-image">
                 <img src="https://via.placeholder.com/286x180?text=Cabeçalho+e+Identidade" alt="Evidência do Passo 4" />
@@ -91,8 +91,31 @@ function App() {
                 </div>
               </div>
             </article>
-            
+
+            {/* Card 5 */}
+            <article className="card">
+              <div className="card-image">
+                <img src="https://via.placeholder.com/286x180?text=Cabeçalho+e+Identidade" alt="Evidência do Passo 4" />
+              </div>
+              <div className="card-body">
+                <h3>Passo 5: Criar menu de navegação</h3>
+                <p>Implementado menu com links de âncora internos.</p>
+                <div className="card-footer">
+                  <span className="card-tech">Tecnologia: HTML / CSS</span>
+                </div>
+              </div>
+            </article>
           </div>
+        </section>
+
+        <section id="sobre">
+          <h2>Sobre</h2>
+          <p>Seção reservada para informações detalhadas do perfil e competências.</p>
+        </section>
+
+        <section id="">
+          <h2>Contato</h2>
+          <p>Seção reservada para o formulário de contato.</p>
         </section>
       </main>
 
