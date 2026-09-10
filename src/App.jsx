@@ -105,6 +105,22 @@ function App() {
                 </div>
               </div>
             </article>
+
+
+            {/* Card 6 (Passo Atual) */}
+            <article className="card">
+              <div className="card-image">
+                <img src="https://via.placeholder.com/286x180?text=Sistema+Visual+CSS" alt="Evidência do Passo 6" />
+              </div>
+              <div className="card-body">
+                <h3>Passo 6: Definir o sistema visual em CSS</h3>
+                <p>Configuradas variáveis CSS em :root para paleta de cores, espaçamentos e sombras, além de reset global com box-sizing e tipografia padrão.</p>
+                <div className="card-footer">
+                  <span className="card-tech">Tecnologia: CSS3</span>
+                </div>
+              </div>
+            </article>
+            
           </div>
         </section>
 
