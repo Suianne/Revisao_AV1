@@ -225,5 +225,14 @@ export const atividades = [
     tecnologia: "React / JSX",
     imagem: "https://via.placeholder.com/286x180?text=Secao+Sobre",
     status: "Concluída"
+  },
+  {
+    id: 26,
+    numero: 26,
+    titulo: "Revisar acessibilidade",
+    descricao: "Auditoria e correções de acessibilidade: hierarquia de headings, suporte a foco visível, rótulos explícitos, textos alt contextuais e redundância textual para elementos coloridos.",
+    tecnologia: "a11y / HTML Semântico",
+    imagem: "https://via.placeholder.com/286x180?text=Revisao+de+Acessibilidade",
+    status: "Concluída"
   }
 ]

@@ -127,6 +127,7 @@ function App() {
           )}
         </section>
 
+        <AcessibilidadeVerificacoes />
         <Sobre />
 
         <Contato />
