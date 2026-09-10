@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import Cabecalho from './components/Cabecalho';
 import Rodape from './components/Rodape';
@@ -5,8 +6,17 @@ import CardAtividade from './components/CardAtividade';
 import { atividades } from './data/atividades';
 
 function App() {
+  const [filtro, setFiltro] = useState('Todos');
+
+  const tecnologias = ['Todos', 'HTML', 'CSS', 'React', 'Git', 'Vercel'];
+
+  const atividadesFiltradas = atividades.filter((atividade) => {
+    if (filtro === 'Todos') return true;
+    return atividade.tecnologia.toLowerCase().includes(filtro.toLowerCase());
+  });
+
   return (
-    <div>
+    <div id="inicio">
       {/* Cabeçalho principal com navegacao semantica */}
       <header>
         {/* Componente Cabeçalho*/}
@@ -18,8 +28,22 @@ function App() {
         <section id="atividades">
           <h2>Lista de Atividades</h2>
 
+          {/*Botões do Filtro de tecnologia*/}
+
+          <div className="filtro-container">
+            {tecnologias.map((tech) => (
+              <button
+                key={tech}
+                className={`btn-filtro ${filtro === tech ? 'ativo' : ''}`}
+                onClick={() => setFiltro(tech)}
+              >
+                {tech}
+              </button>
+            ))}
+          </div>
+
           <div className="grid-cards">
-            {atividades.map((atividade) => (
+            {atividadesFiltradas.map((atividade) => (
               <CardAtividade
                 key={atividade.id}
                 numero={atividade.numero}

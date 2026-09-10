@@ -141,6 +141,16 @@ export const atividades = [
     descricao: "Aplicação de renderização condicional exibindo se a atividade está Concluída, Em andamento ou Planejada com estilos visuais próprios.",
     tecnologia: "React / CSS",
     imagem: "https://via.placeholder.com/286x180?text=Status+Condicional",
-    status: "Em andamento"
+    status: "Concluído"
+  },
+
+  {
+    id: 17,
+    numero: 17,
+    titulo: "Criar filtro por tecnologia",
+    descricao: "Controle da exibição dos cartões através de useState sem modificar o array original de dados.",
+    tecnologia: "React / State",
+    imagem: "https://via.placeholder.com/286x180?text=Filtro+Tecnologia",
+    status: "Concluída"
   }
 ]
