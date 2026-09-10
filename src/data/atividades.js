@@ -252,5 +252,14 @@ export const atividades = [
     tecnologia: "Git / Tagging",
     imagem: "https://via.placeholder.com/286x180?text=Tag+v1.0.0",
     status: "Concluída"
+  },
+  {
+    id: 29,
+    numero: 29,
+    titulo: "Enviar o projeto ao repositório remoto",
+    descricao: "Conexão do repositório local ao GitHub (remote origin) e envio completo do código-fonte da branch main juntamente com a tag de versão v1.0.0.",
+    tecnologia: "Git / GitHub",
+    imagem: "https://via.placeholder.com/286x180?text=Push+GitHub",
+    status: "Concluída"
   }
 ]
