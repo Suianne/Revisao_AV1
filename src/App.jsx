@@ -1,12 +1,17 @@
+// src/App.jsx
+
 import { useState } from 'react';
 import './App.css';
 import Cabecalho from './components/Cabecalho';
 import Rodape from './components/Rodape';
 import CardAtividade from './components/CardAtividade';
+import ModalAtividade from './components/ModalAtividade';
 import { atividades } from './data/atividades';
 
 function App() {
   const [filtro, setFiltro] = useState('Todos');
+  const [busca, setBusca] = useState('');
+  const [atividadeSelecionada, setAtividadeSelecionada] = useState(null);
 
   const tecnologias = ['Todos', 'HTML', 'CSS', 'React', 'Git', 'Vercel'];
 
@@ -25,18 +30,12 @@ function App() {
       atividade.descricao.toLowerCase().includes(termoBusca);
 
     return atendeFiltroTech && atendeBuscaTexto;
-
   });
 
   return (
     <div id="inicio">
-      {/* Cabeçalho principal com navegacao semantica */}
-      <header>
-        {/* Componente Cabeçalho*/}
-        <Cabecalho />
-      </header>
+      <Cabecalho />
 
-      {/* Conteudo principal da pagina */}
       <main>
         <section id="atividades">
           <div className="cabecalho-secao">
@@ -46,7 +45,6 @@ function App() {
             </p>
           </div>
 
-          {/* Barra de Progresso Acessível (Passo 20) */}
           <div className="barra-progresso-container">
             <div
               className="barra-progresso-trilho"
@@ -63,7 +61,6 @@ function App() {
             </div>
           </div>
 
-          {/* Campo de Busca por Texto */}
           <div className="busca-container">
             <input
               type="text"
@@ -74,7 +71,6 @@ function App() {
             />
           </div>
 
-          {/* Botões do Filtro de Tecnologia */}
           <div className="filtro-container">
             {tecnologias.map((tech) => (
               <button
@@ -87,7 +83,6 @@ function App() {
             ))}
           </div>
 
-          {/* Lista de Cartões */}
           {atividadesFiltradas.length > 0 ? (
             <div className="grid-cards">
               {atividadesFiltradas.map((atividade) => (
@@ -99,6 +94,7 @@ function App() {
                   tecnologia={atividade.tecnologia}
                   imagem={atividade.imagem}
                   status={atividade.status}
+                  onVerDetalhes={() => setAtividadeSelecionada(atividade)}
                 />
               ))}
             </div>
@@ -114,13 +110,18 @@ function App() {
           <p>Seção reservada para informações detalhadas do perfil e competências.</p>
         </section>
 
-        <section id="">
+        <section id="contato">
           <h2>Contato</h2>
           <p>Seção reservada para o formulário de contato.</p>
         </section>
       </main>
 
-      {/*Componente de Rodapé*/}
+      {/* Renderização do Modal */}
+      <ModalAtividade 
+        atividade={atividadeSelecionada} 
+        onClose={() => setAtividadeSelecionada(null)} 
+      />
+
       <Rodape />
     </div>
   );

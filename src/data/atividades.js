@@ -180,5 +180,14 @@ export const atividades = [
     tecnologia: "React / HTML5 ARIA",
     imagem: "https://via.placeholder.com/286x180?text=Barra+de+Progresso",
     status: "Concluída"
+  },
+  {
+    id: 21,
+    numero: 21,
+    titulo: "Criar modal de detalhes",
+    descricao: "Desenvolvimento de modal interativo para exibição detalhada da atividade, com suporte a fechamento via tecla Escape, clique externo e controle de foco acessível.",
+    tecnologia: "React / Acessibilidade",
+    imagem: "https://via.placeholder.com/286x180?text=Modal+de+Detalhes",
+    status: "Concluída"
   }
 ]
