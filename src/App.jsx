@@ -1,6 +1,6 @@
 // src/App.jsx
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Cabecalho from './components/Cabecalho';
 import Rodape from './components/Rodape';
@@ -13,7 +13,16 @@ function App() {
   const [filtro, setFiltro] = useState('Todos');
   const [busca, setBusca] = useState('');
   const [atividadeSelecionada, setAtividadeSelecionada] = useState(null);
-  const [tema, setTema] = useState('light');
+
+
+  const [tema, setTema] = useState(() => {
+    const temaSalvo = localStorage.getItem('portfolio_tema');
+    return temaSalvo ? temaSalvo : 'light';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('portfolio_tema', tema);
+  }, [tema]);
 
   const tecnologias = ['Todos', 'HTML', 'CSS', 'React', 'Git', 'Vercel'];
 

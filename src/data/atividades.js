@@ -207,5 +207,14 @@ export const atividades = [
     tecnologia: "React / CSS Variables",
     imagem: "https://via.placeholder.com/286x180?text=Alternancia+de+Tema",
     status: "Concluída"
+  },
+  {
+    id: 24,
+    numero: 24,
+    titulo: "Persistir preferência local",
+    descricao: "Mapeamento e recuperação do tema ativo usando localStorage sob a chave 'portfolio_tema', garantindo a restauração da escolha do usuário com fallback padrão 'light'.",
+    tecnologia: "React / LocalStorage",
+    imagem: "https://via.placeholder.com/286x180?text=Persistencia+Local",
+    status: "Concluída"
   }
 ]
