@@ -5,7 +5,8 @@ export const atividades = [
         titulo: "Preparar ambiente",
         descricao: "Versão do node: v24.16.0 | Versão do npm: 9.8.0 | Versão do git: 2.54.0.windows.1",
         tencnologia: "React / Vite",
-        imagem: "https://via.placeholder.com/286x180?text=Ambiente"
+        imagem: "https://via.placeholder.com/286x180?text=Ambiente",
+        status: "Concluída"
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ export const atividades = [
         titulo: "Inicializar o repositório Git",
         descricao: "Repositório iniciado com git init, arquivo .gitignore configurado para ignorar node_modules e dist, e branch principal definida como main.",
         tencnologia: "Git",
-        imagem: "https://via.placeholder.com/286x180?text=Git+Init"
+        imagem: "https://via.placeholder.com/286x180?text=Git+Init",
+        status: "Concluída"
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ export const atividades = [
         titulo: "Construir a estrutura semântica",
         descricao: "Aplicação organizada utilizando as tags HTML semânticas header, nav, main, section, article e footer, garantindo hierarquia e acessibilidade.",
         tencnologia: "HTML / JSX",
-        imagem: "https://via.placeholder.com/286x180?text=HTML+Semantico"
+        imagem: "https://via.placeholder.com/286x180?text=HTML+Semantico",
+        status: "Concluída"
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ export const atividades = [
         titulo: "Criar cabeçalho e identidade",
         descricao: "Adicionado cabeçalho completo com nome do autor, turma, avatar, texto descritivo e botão de ação para navegação rápida até a lista de entregas.",
         tencnologia: "HTML / CSS",
-        imagem: "https://via.placeholder.com/286x180?text=Cabeçalho+e+Identidade"
+        imagem: "https://via.placeholder.com/286x180?text=Cabeçalho+e+Identidade",
+        status: "Concluída"
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ export const atividades = [
         titulo: "Criar menu de navegação",
         descricao: "Implementado menu com links de âncora internos.",
         tencnologia: "HTML / CSS",
-        imagem: "https://via.placeholder.com/286x180?text=Cabeçalho+e+Identidade"
+        imagem: "https://via.placeholder.com/286x180?text=Cabeçalho+e+Identidade",
+        status: "Concluída"
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ export const atividades = [
         titulo: "Definir o sistema visual em CSS",
         descricao: "Configuradas variáveis CSS em :root para paleta de cores, espaçamentos e sombras, além de reset global com box-sizing e tipografia padrão.",
         tencnologia: "CSS3",
-        imagem: "https://via.placeholder.com/286x180?text=Cartão+de+Atividades"
+        imagem: "https://via.placeholder.com/286x180?text=Cartão+de+Atividades",
+        status: "Concluída"
     },
     {
         id: 7,
@@ -53,7 +59,8 @@ export const atividades = [
         titulo: "Construir cartões de atividades",
         descricao: "Estilização visual completa desenvolvida para os componentes de cartão, com transições para hover, bordas com foco para navegação por teclado e alto contraste.",
         tencnologia: "CSS3",
-        imagem: "https://via.placeholder.com/286x180?text=Cartão+de+Atividades"
+        imagem: "https://via.placeholder.com/286x180?text=Cartão+de+Atividades",
+        status: "Concluída"
     },
     {
         id: 8,
@@ -61,7 +68,8 @@ export const atividades = [
         titulo: "Organizar o layout com Flexbox",
         descricao: "Aplicado Flexbox para alinhar e distribuir elementos no cabeçalho, perfil e menu de navegação, utilizando justify-content, align-items e gap.",
         tencnologia: "CSS3 Flexbox",
-        imagem: "https://via.placeholder.com/286x180?text=Flexbox+Layout"
+        imagem: "https://via.placeholder.com/286x180?text=Flexbox+Layout",
+        status: "Concluída"
     },
     {
         id: 9,
@@ -69,7 +77,8 @@ export const atividades = [
         titulo: "Organizar atividades com CSS Grid",
         descricao: "Aplicado CSS Grid na seção de entregas utilizando repeat(auto-fit, minmax(280px, 1fr)) para distribuir os cartões de forma fluida e sem largura fixa.",
         tencnologia: "CSS3 Grid",
-        imagem: "https://via.placeholder.com/286x180?text=CSS+Grid"
+        imagem: "https://via.placeholder.com/286x180?text=CSS+Grid",
+        status: "Concluída"
     },
     {
         id: 10,
@@ -77,7 +86,8 @@ export const atividades = [
         titulo: "Tornar a homepage responsiva",
         descricao: "Implementadas media queries para adaptar o layout em telas de 360px, 768px e 1440px, ajustando o menu, perfil e a grade de cartões sem quebras de layout.",
         tencnologia: "CSS3 Media Queries",
-        imagem: "https://via.placeholder.com/286x180?text=Responsividade"
+        imagem: "https://via.placeholder.com/286x180?text=Responsividade",
+        status: "Concluída"
     },
     {
         id: 11,
@@ -85,7 +95,8 @@ export const atividades = [
         titulo: "Criar o componente Cabecalho",
         descricao: "Estrutura do cabeçalho isolada em src/components/Cabecalho.jsx, reduzindo o acoplamento no App.jsx e promovendo reuso e organização do código.",
         tencnologia: "React / JSX",
-        imagem: "https://via.placeholder.com/286x180?text=Componente+Cabecalho"
+        imagem: "https://via.placeholder.com/286x180?text=Componente+Cabecalho",
+        status: "Concluída"
     },
     {
         id: 12,
@@ -93,7 +104,8 @@ export const atividades = [
         titulo: "Criar o componente Rodapé",
         descricao: "Isolada a estrutura do rodapé em Rodape.jsx com cálculo dinâmico do ano corrente em JavaScript e link interno para retorno suave ao topo.",
         tencnologia: "React / JSX",
-        imagem: "https://via.placeholder.com/286x180?text=Componente+Rodape"
+        imagem: "https://via.placeholder.com/286x180?text=Componente+Rodape",
+        status: "Concluída"
     },
     {
         id: 13,
@@ -101,7 +113,8 @@ export const atividades = [
         titulo: "Criar o componente CardAtividade",
         descricao: "Cartão transformado em componente dinâmico reutilizável, recebendo numero, titulo, descricao, tecnologia e imagem através de props.",
         tencnologia: "React / Props",
-        imagem: "https://via.placeholder.com/286x180?text=Componente+CardAtividade"
+        imagem: "https://via.placeholder.com/286x180?text=Componente+CardAtividade",
+        status: "Concluída"
     },
     {
         id: 14,
@@ -109,7 +122,8 @@ export const atividades = [
         titulo: "Modelar os dados das atividades",
         descricao: "Separação de dados e apresentação criando o arquivo de mock em src/data/atividades.js.",
         tencnologia: "JavaScript / ES6",
-        imagem: "https://via.placeholder.com/286x180?text=Modelagem+de+Dados"
+        imagem: "https://via.placeholder.com/286x180?text=Modelagem+de+Dados",
+        status: "Concluída"
     },
     {
         id: 15,
@@ -117,6 +131,16 @@ export const atividades = [
         titulo: "Renderizar a lista com map",
         descricao: "Substituição da renderização estática pelo método .map() iterando sobre o array de dados com key única.",
         tencnologia: "React / JSX",
-        imagem: "https://via.placeholder.com/286x180?text=Renderizacao+Map"
-    }
+        imagem: "https://via.placeholder.com/286x180?text=Renderizacao+Map",
+        status: "Concluída"
+    },
+    {
+    id: 16,
+    numero: 16,
+    titulo: "Mostrar status condicional",
+    descricao: "Aplicação de renderização condicional exibindo se a atividade está Concluída, Em andamento ou Planejada com estilos visuais próprios.",
+    tecnologia: "React / CSS",
+    imagem: "https://via.placeholder.com/286x180?text=Status+Condicional",
+    status: "Em andamento"
+  }
 ]
