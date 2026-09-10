@@ -107,7 +107,7 @@ function App() {
             </article>
 
 
-            {/* Card 6 (Passo Atual) */}
+            {/* Card 6*/}
             <article className="card">
               <div className="card-image">
                 <img src="https://via.placeholder.com/286x180?text=Sistema+Visual+CSS" alt="Evidência do Passo 6" />
@@ -120,7 +120,20 @@ function App() {
                 </div>
               </div>
             </article>
-            
+
+            {/* Card 7*/}
+            <article className="card" tabIndex="0">
+              <div className="card-image">
+                <img src="https://via.placeholder.com/286x180?text=Cartão+de+Atividades" alt="Evidência do Passo 7" />
+              </div>
+              <div className="card-body">
+                <h3>Passo 7: Construir cartões de atividades</h3>
+                <p>Estilização visual completa desenvolvida para os componentes de cartão, com transições para hover, bordas com foco para navegação por teclado e alto contraste.</p>
+                <div className="card-footer">
+                  <span className="card-tech">Tecnologia: CSS3</span>
+                </div>
+              </div>
+            </article>
           </div>
         </section>
 
