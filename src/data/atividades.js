@@ -198,5 +198,14 @@ export const atividades = [
     tecnologia: "React / Forms",
     imagem: "https://via.placeholder.com/286x180?text=Formulario+de+Contato",
     status: "Concluída"
+  },
+  {
+    id: 23,
+    numero: 23,
+    titulo: "Implementar alternância de tema",
+    descricao: "Controle de preferência visual entre modo claro e escuro via estado, aplicando atributos dinâmicos CSS que mantêm contraste e acessibilidade de foco.",
+    tecnologia: "React / CSS Variables",
+    imagem: "https://via.placeholder.com/286x180?text=Alternancia+de+Tema",
+    status: "Concluída"
   }
 ]

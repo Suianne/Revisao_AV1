@@ -13,8 +13,13 @@ function App() {
   const [filtro, setFiltro] = useState('Todos');
   const [busca, setBusca] = useState('');
   const [atividadeSelecionada, setAtividadeSelecionada] = useState(null);
+  const [tema, setTema] = useState('light');
 
   const tecnologias = ['Todos', 'HTML', 'CSS', 'React', 'Git', 'Vercel'];
+
+  const alternarTema = () => {
+    setTema((prevTema) => (prevTema === 'light' ? 'dark' : 'light'));
+  };
 
   const concluidas = atividades.filter((item) => item.status === 'Concluída').length;
   const total = 30;
@@ -34,7 +39,13 @@ function App() {
   });
 
   return (
-    <div id="inicio">
+    <div id="inicio" data-theme={tema} className="app-container">
+      <div className="barra-topo-tema" style={{ padding: '8px 16px', textAlign: 'right' }}>
+        <button onClick={alternarTema} className="btn-tema" aria-label="Alternar tema visual">
+          {tema === 'light' ? '🌙 Modo Escuro' : '☀️ Modo Claro'}
+        </button>
+      </div>
+
       <Cabecalho />
 
       <main>
@@ -111,7 +122,6 @@ function App() {
           <p>Seção reservada para informações detalhadas do perfil e competências.</p>
         </section>
 
-        {/* Componente do Formulário de Contato */}
         <Contato />
       </main>
 
