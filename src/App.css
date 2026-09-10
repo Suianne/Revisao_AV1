@@ -209,3 +209,33 @@ nav a {
   color: #ffffff;
   border-color: var(--primary-color, #007bff);
 }
+
+.busca-container {
+  margin-bottom: var(--spacing-sm, 12px);
+}
+
+.input-busca {
+  width: 100%;
+  max-width: 480px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  border: 1px solid var(--border-color, #ccc);
+  border-radius: var(--border-radius, 4px);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input-busca:focus {
+  border-color: var(--primary-color, #007bff);
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.mensagem-vazia {
+  padding: 24px;
+  text-align: center;
+  background-color: var(--card-bg, #f9f9f9);
+  border: 1px dashed var(--border-color, #ccc);
+  border-radius: var((--border-radius, 4px));
+  color: var(--text-muted, #666);
+  margin-top: 16px;
+}

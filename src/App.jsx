@@ -11,8 +11,17 @@ function App() {
   const tecnologias = ['Todos', 'HTML', 'CSS', 'React', 'Git', 'Vercel'];
 
   const atividadesFiltradas = atividades.filter((atividade) => {
-    if (filtro === 'Todos') return true;
-    return atividade.tecnologia.toLowerCase().includes(filtro.toLowerCase());
+    const atendeFiltroTech =
+      filtro === 'Todos' ||
+      atividade.tecnologia.toLowerCase().includes(filtro.toLowerCase());
+
+    const termoBusca = busca.toLowerCase();
+    const atendeBuscaTexto =
+      atividade.titulo.toLowerCase().includes(termoBusca) ||
+      atividade.descricao.toLowerCase().includes(termoBusca);
+
+    return atendeFiltroTech && atendeBuscaTexto;
+    
   });
 
   return (

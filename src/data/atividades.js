@@ -151,5 +151,15 @@ export const atividades = [
     tecnologia: "React / State",
     imagem: "https://via.placeholder.com/286x180?text=Filtro+Tecnologia",
     status: "Concluída"
+  },
+
+  {
+    id: 18,
+    numero: 18,
+    titulo: "Criar busca por texto",
+    descricao: "Implementação de campo de busca controlado para filtragem de atividades por título ou descrição sem case-sensitivity, com feedback visual para busca sem resultados.",
+    tecnologia: "React / State",
+    imagem: "https://via.placeholder.com/286x180?text=Busca+por+Texto",
+    status: "Concluída"
   }
 ]
