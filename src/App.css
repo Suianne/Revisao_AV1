@@ -235,7 +235,7 @@ nav a {
   text-align: center;
   background-color: var(--card-bg, #f9f9f9);
   border: 1px dashed var(--border-color, #ccc);
-  border-radius: var((--border-radius, 4px));
+  border-radius: var(--border-radius, 4px);
   color: var(--text-muted, #666);
   margin-top: 16px;
 }
