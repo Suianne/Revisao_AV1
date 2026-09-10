@@ -10,6 +10,9 @@ function App() {
 
   const tecnologias = ['Todos', 'HTML', 'CSS', 'React', 'Git', 'Vercel'];
 
+  const concluidas = atividades.filter((item) => item.status === 'Concluída').length;
+  const total = 30;
+
   const atividadesFiltradas = atividades.filter((atividade) => {
     const atendeFiltroTech =
       filtro === 'Todos' ||
@@ -21,7 +24,7 @@ function App() {
       atividade.descricao.toLowerCase().includes(termoBusca);
 
     return atendeFiltroTech && atendeBuscaTexto;
-    
+
   });
 
   return (

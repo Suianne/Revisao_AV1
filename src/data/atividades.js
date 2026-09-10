@@ -161,5 +161,15 @@ export const atividades = [
     tecnologia: "React / State",
     imagem: "https://via.placeholder.com/286x180?text=Busca+por+Texto",
     status: "Concluída"
+  },
+
+  {
+    id: 19,
+    numero: 19,
+    titulo: "Criar contador de progresso",
+    descricao: "Cálculo e exibição automática do progresso das atividades concluídas diretamente do array de dados, sem uso redundante de estado.",
+    tecnologia: "React / JavaScript",
+    imagem: "https://via.placeholder.com/286x180?text=Contador+Progresso",
+    status: "Concluída"
   }
 ]

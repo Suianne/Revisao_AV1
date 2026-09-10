@@ -239,3 +239,21 @@ nav a {
   color: var(--text-muted, #666);
   margin-top: 16px;
 }
+
+.cabecalho-secao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm, 8px);
+  margin-bottom: var(--spacing-md, 16 px);
+}
+
+.contador-progresso {
+  font-size: 0.95rem;
+  background-color: var(--card-bg, #f0f2f8);
+  padding: 6px 12px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color, #d0d7de);
+  color: var(--text-color);
+}
