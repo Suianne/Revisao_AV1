@@ -1,0 +1,27 @@
+[33mfd3160b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m docs(revisao_av1): criar README do projeto
+[33m4aca198[m fix(revisao_av1): melhorando as acessibilidades de interface
+[33m63a959d[m feat(revisao_av1): adicionando componente da seção de apresentação
+[33mdd2f03f[m feat(revisao_av1): persistência do tema no navegador
+[33m4d852b6[m feat(revisao_av1): implementar tema claro e escuro
+[33mf31845c[m feat(revisao_av1): criar formulário de contato
+[33m569c3ae[m feat(revisao_av1): adicionar modal de detalhes
+[33maf93352[m feat(revisao_av1): criar barra de progress acessível
+[33m7f6ba13[m feat(revisao_av1): exibir progresso das atividades
+[33ma06b1c8[m feat(revisao_av1): adicionar busca de atividades
+[33m3933b04[m feat(revisao_av1): atualizações em filtrar atividades por tecnologia
+[33m170f328[m feat(revisao_av1): filtrar atividades por tecnologia
+[33mcb617ae[m feat(revisao_av1): adicionar status condicional
+[33m572416a[m feat(revisao_av1): renderizar lista com map
+[33m331a80f[m fix(revisao_av1): adicionando novamente os components que ficaram faltando entre os dois últimos commits
+[33m819ade0[m feat(revisao_av1): criar componente CardAtividade com props
+[33macd5509[m refactor(revisao_av1): transformar cabecalho em componente
+[33me290471[m style(revisao_av1): implementar responsividade
+[33m6bd9553[m style(revisao_av1): organizar atividades com CSS Grid
+[33m38a8105[m style(revisao_av1): aplicar Flexbox ao layout
+[33mda3dde9[m style(revisao_av1): criar cartoes das atividades
+[33m1c1a8d8[m style(revisao_av1): definir sistema visual com variáveis CSS
+[33md53ad8d[m feat(revisao_av1): implementar menu de navegacao
+[33mc137a53[m feat(revisao_AV1): adicionar cabeçalho e identidade visual
+[33m4f7a4ac[m feat(revisao_AV1): criar estrutura semântica da homepage
+[33m0c7a4a8[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m ATUALIZAÇÕES
+[33mc5ea9d4[m feat (revisao_av1): commit inicial

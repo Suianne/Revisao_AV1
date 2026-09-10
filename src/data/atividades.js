@@ -243,5 +243,14 @@ export const atividades = [
     tecnologia: "Markdown / Git",
     imagem: "https://via.placeholder.com/286x180?text=Documentacao+README",
     status: "Concluída"
+  },
+  {
+    id: 28,
+    numero: 28,
+    titulo: "Organizar o histórico Git",
+    descricao: "Revisão do repositório, validação do histórico de commits e criação da tag local v1.0.0 para marcar o lançamento da primeira versão estável do portfólio.",
+    tecnologia: "Git / Tagging",
+    imagem: "https://via.placeholder.com/286x180?text=Tag+v1.0.0",
+    status: "Concluída"
   }
 ]
