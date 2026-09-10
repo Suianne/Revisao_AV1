@@ -37,16 +37,21 @@ function App() {
   const percentual = Math.min(100, Math.max(0, Math.round((concluidas / total) * 100)));
 
   const atividadesFiltradas = atividades.filter((atividade) => {
-    const atendeFiltroTech =
-      filtro === 'Todos' ||
-      atividade.tecnologia.toLowerCase().includes(filtro.toLowerCase());
+  // Trata caso a propriedade 'tecnologia' esteja ausente/indefinida
+  const techAtividade = atividade.tecnologia ? atividade.tecnologia.toLowerCase() : '';
+  const filtroAtual = filtro.toLowerCase();
 
-    const termoBusca = busca.toLowerCase();
-    const atendeBuscaTexto =
-      atividade.titulo.toLowerCase().includes(termoBusca) ||
-      atividade.descricao.toLowerCase().includes(termoBusca);
+  const atendeFiltroTech =
+    filtro === 'Todos' || techAtividade.includes(filtroAtual);
 
-    return atendeFiltroTech && atendeBuscaTexto;
+  const termoBusca = busca.toLowerCase();
+  const titulo = atividade.titulo ? atividade.titulo.toLowerCase() : '';
+  const descricao = atividade.descricao ? atividade.descricao.toLowerCase() : '';
+
+  const atendeBuscaTexto =
+    titulo.includes(termoBusca) || descricao.includes(termoBusca);
+
+  return atendeFiltroTech && atendeBuscaTexto;
   });
 
   return (
