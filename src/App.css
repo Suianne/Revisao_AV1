@@ -109,3 +109,15 @@ nav a {
   color: var(--text-color);
   font-weight: 500;
 }
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-md);
+}
+
+.card {
+  max-width: none;
+  width: 100%;
+}

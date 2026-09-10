@@ -149,6 +149,21 @@ function App() {
                 </div>
               </div>
             </article>
+
+            {/*Card 9*/}
+            <article className="card">
+              <div className="card-image">
+                <img src="https://via.placeholder.com/286x180?text=CSS+Grid" alt="Evidência do Passo 9" />
+              </div>
+              <div className="card-body">
+                <h3>Passo 9: Organizar atividades com CSS Grid</h3>
+                <p>Aplicado CSS Grid na seção de entregas utilizando repeat(auto-fit, minmax(280px, 1fr)) para distribuir os cartões de forma fluida e sem largura fixa.</p>
+                <div className="card-footer">
+                  <span className="card-tech">Tecnologia: CSS3 Grid</span>
+                </div>
+              </div>
+            </article>
+            
           </div>
         </section>
 
