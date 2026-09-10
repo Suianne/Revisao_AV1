@@ -134,6 +134,21 @@ function App() {
                 </div>
               </div>
             </article>
+
+
+            {/* Card 8*/}
+            <article className="card">
+              <div className="card-image">
+                <img src="https://via.placeholder.com/286x180?text=Flexbox+Layout" alt="Evidência do Passo 8" />
+              </div>
+              <div className="card-body">
+                <h3>Passo 8: Organizar o layout com Flexbox</h3>
+                <p>Aplicado Flexbox para alinhar e distribuir elementos no cabeçalho, perfil e menu de navegação, utilizando justify-content, align-items e gap.</p>
+                <div className="card-footer">
+                  <span className="card-tech">Tecnologia: CSS3 Flexbox</span>
+                </div>
+              </div>
+            </article>
           </div>
         </section>
 

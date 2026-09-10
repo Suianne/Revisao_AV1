@@ -80,3 +80,32 @@ nav a:focus{
   font-weight: bold;
   color: var(--primary-color);
 }
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-md);
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
