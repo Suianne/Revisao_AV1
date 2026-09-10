@@ -1,5 +1,7 @@
 import './App.css';
 import Cabecalho from './components/Cabecalho';
+import Rodape from './components/Rodape';
+import CardAtividade from './components/CardAtividade';
 
 function App() {
   return (
@@ -16,166 +18,109 @@ function App() {
           <h2>Lista de Atividades</h2>
 
           <div className="grid-cards">
-            {/* Card 1 */}
-            <article className="card">
-              <div className="card-image">
-                <img src="https://via.placeholder.com/286x180?text=Ambiente" alt="Evidência do Passo 1" />
-              </div>
-              <div className="card-body">
-                <h3>Passo 1: Preparar ambiente</h3>
-                <ul>
-                  <li><strong>Versão do node:</strong> v24.16.0</li>
-                  <li><strong>Versão do npm:</strong> 9.8.0</li>
-                  <li><strong>Versão do git:</strong> 2.54.0.windows.1</li>
-                </ul>
-                <div className="card-footer">
-                  <span className="card-tech">Tecnologia: React / Vite</span>
-                </div>
-              </div>
-            </article>
+            <CardAtividade
+              numero={1}
+              titulo="Preparar ambiente"
+              descricao="Versão do node: v24.16.0 | Versão do npm: 9.8.0 | Versão do git: 2.54.0.windows.1"
+              tecnologia="React / Vite"
+              imagem="https://via.placeholder.com/286x180?text=Ambiente"
+            />
 
-            {/* Card 2 */}
-            <article className="card">
-              <div className="card-image">
-                <img src="https://via.placeholder.com/286x180?text=Git+Init" alt="Evidência do Passo 2" />
-              </div>
-              <div className="card-body">
-                <h3>Passo 2: Inicializar o repositório Git</h3>
-                <p>Repositório iniciado com git init, arquivo .gitignore configurado para ignorar node_modules e dist, e branch principal definida como main.</p>
-                <div className="card-footer">
-                  <span className="card-tech">Tecnologia: Git</span>
-                </div>
-              </div>
-            </article>
+            <CardAtividade
+              numero={2}
+              titulo="Inicializar o repositório Git"
+              descricao="Repositório iniciado com git init, arquivo .gitignore configurado para ignorar node_modules e dist, e branch principal definida como main."
+              tecnologia="Git"
+              imagem="https://via.placeholder.com/286x180?text=Git+Init"
+            />
 
-            {/* Card 3 (Passo Atual) */}
-            <article className="card">
-              <div className="card-image">
-                <img src="https://via.placeholder.com/286x180?text=HTML+Semantico" alt="Evidência do Passo 3" />
-              </div>
-              <div className="card-body">
-                <h3>Passo 3: Construir a estrutura semântica</h3>
-                <p>Aplicação organizada utilizando as tags HTML semânticas header, nav, main, section, article e footer, garantindo hierarquia e acessibilidade.</p>
-                <div className="card-footer">
-                  <span className="card-tech">Tecnologia: HTML / JSX</span>
-                </div>
-              </div>
-            </article>
+            <CardAtividade
+              numero={3}
+              titulo="Construir a estrutura semântica"
+              descricao="Aplicação organizada utilizando as tags HTML semânticas header, nav, main, section, article e footer, garantindo hierarquia e acessibilidade."
+              tecnologia="HTML / JSX"
+              imagem="https://via.placeholder.com/286x180?text=HTML+Semantico"
+            />
 
-            {/* Card 4*/}
-            <article className="card">
-              <div className="card-image">
-                <img src="https://via.placeholder.com/286x180?text=Cabeçalho+e+Identidade" alt="Evidência do Passo 4" />
-              </div>
-              <div className="card-body">
-                <h3>Passo 4: Criar cabeçalho e identidade</h3>
-                <p>Adicionado cabeçalho completo com nome do autor, turma, avatar, texto descritivo e botão de ação para navegação rápida até a lista de entregas.</p>
-                <div className="card-footer">
-                  <span className="card-tech">Tecnologia: HTML / CSS</span>
-                </div>
-              </div>
-            </article>
+            <CardAtividade
+              numero={4}
+              titulo="Criar cabeçalho e identidade"
+              descricao="Adicionado cabeçalho completo com nome do autor, turma, avatar, texto descritivo e botão de ação para navegação rápida até a lista de entregas."
+              tecnologia="HTML / CSS"
+              imagem="https://via.placeholder.com/286x180?text=Cabeçalho+e+Identidade"
+            />
 
-            {/* Card 5 */}
-            <article className="card">
-              <div className="card-image">
-                <img src="https://via.placeholder.com/286x180?text=Cabeçalho+e+Identidade" alt="Evidência do Passo 4" />
-              </div>
-              <div className="card-body">
-                <h3>Passo 5: Criar menu de navegação</h3>
-                <p>Implementado menu com links de âncora internos.</p>
-                <div className="card-footer">
-                  <span className="card-tech">Tecnologia: HTML / CSS</span>
-                </div>
-              </div>
-            </article>
+            <CardAtividade
+              numero={5}
+              titulo="Criar menu de navegação"
+              descricao="Implementado menu com links de âncora internos."
+              tecnologia="HTML / CSS"
+              imagem="https://via.placeholder.com/286x180?text=Cabeçalho+e+Identidade"
+            />
+            
+            <CardAtividade
+              numero={6}
+              titulo="Definir o sistema visual em CSS"
+              descricao="Configuradas variáveis CSS em :root para paleta de cores, espaçamentos e sombras, além de reset global com box-sizing e tipografia padrão."
+              tecnologia="CSS3"
+              imagem="https://via.placeholder.com/286x180?text=Sistema+Visual+CSS"
+            />
 
+            <CardAtividade
+              numero={7}
+              titulo="Construir cartões de atividades"
+              descricao="Estilização visual completa desenvolvida para os componentes de cartão, com transições para hover, bordas com foco para navegação por teclado e alto contraste."
+              tecnologia="CSS3"
+              imagem="https://via.placeholder.com/286x180?text=Cartão+de+Atividades"
+            />
 
-            {/* Card 6*/}
-            <article className="card">
-              <div className="card-image">
-                <img src="https://via.placeholder.com/286x180?text=Sistema+Visual+CSS" alt="Evidência do Passo 6" />
-              </div>
-              <div className="card-body">
-                <h3>Passo 6: Definir o sistema visual em CSS</h3>
-                <p>Configuradas variáveis CSS em :root para paleta de cores, espaçamentos e sombras, além de reset global com box-sizing e tipografia padrão.</p>
-                <div className="card-footer">
-                  <span className="card-tech">Tecnologia: CSS3</span>
-                </div>
-              </div>
-            </article>
+            <CardAtividade
+              numero={8}
+              titulo="Organizar o layout com Flexbox"
+              descricao="Aplicado Flexbox para alinhar e distribuir elementos no cabeçalho, perfil e menu de navegação, utilizando justify-content, align-items e gap."
+              tecnologia="CSS3 Flexbox"
+              imagem="https://via.placeholder.com/286x180?text=Flexbox+Layout"
+            />
 
-            {/* Card 7*/}
-            <article className="card" tabIndex="0">
-              <div className="card-image">
-                <img src="https://via.placeholder.com/286x180?text=Cartão+de+Atividades" alt="Evidência do Passo 7" />
-              </div>
-              <div className="card-body">
-                <h3>Passo 7: Construir cartões de atividades</h3>
-                <p>Estilização visual completa desenvolvida para os componentes de cartão, com transições para hover, bordas com foco para navegação por teclado e alto contraste.</p>
-                <div className="card-footer">
-                  <span className="card-tech">Tecnologia: CSS3</span>
-                </div>
-              </div>
-            </article>
+            <CardAtividade
+              numero={9}
+              titulo="Organizar atividades com CSS Grid"
+              descricao="Aplicado CSS Grid na seção de entregas utilizando repeat(auto-fit, minmax(280px, 1fr)) para distribuir os cartões de forma fluida e sem largura fixa."
+              tecnologia="CSS3 Grid"
+              imagem="https://via.placeholder.com/286x180?text=CSS+Grid"
+            />
 
+            <CardAtividade
+              numero={10}
+              titulo="Tornar a homepage responsiva"
+              descricao="Implementadas media queries para adaptar o layout em telas de 360px, 768px e 1440px, ajustando o menu, perfil e a grade de cartões sem quebras de layout."
+              tecnologia="CSS3 Media Queries"
+              imagem="https://via.placeholder.com/286x180?text=Responsividade"
+            />
 
-            {/* Card 8*/}
-            <article className="card">
-              <div className="card-image">
-                <img src="https://via.placeholder.com/286x180?text=Flexbox+Layout" alt="Evidência do Passo 8" />
-              </div>
-              <div className="card-body">
-                <h3>Passo 8: Organizar o layout com Flexbox</h3>
-                <p>Aplicado Flexbox para alinhar e distribuir elementos no cabeçalho, perfil e menu de navegação, utilizando justify-content, align-items e gap.</p>
-                <div className="card-footer">
-                  <span className="card-tech">Tecnologia: CSS3 Flexbox</span>
-                </div>
-              </div>
-            </article>
+            <CardAtividade
+              numero={11}
+              titulo="Criar o componente Cabecalho"
+              descricao="Estrutura do cabeçalho isolada em src/components/Cabecalho.jsx, reduzindo o acoplamento no App.jsx e promovendo reuso e organização do código."
+              tecnologia="React / JSX"
+              imagem="https://via.placeholder.com/286x180?text=Componente+Cabecalho"
+            />
 
-            {/*Card 9*/}
-            <article className="card">
-              <div className="card-image">
-                <img src="https://via.placeholder.com/286x180?text=CSS+Grid" alt="Evidência do Passo 9" />
-              </div>
-              <div className="card-body">
-                <h3>Passo 9: Organizar atividades com CSS Grid</h3>
-                <p>Aplicado CSS Grid na seção de entregas utilizando repeat(auto-fit, minmax(280px, 1fr)) para distribuir os cartões de forma fluida e sem largura fixa.</p>
-                <div className="card-footer">
-                  <span className="card-tech">Tecnologia: CSS3 Grid</span>
-                </div>
-              </div>
-            </article>
+            <CardAtividade
+              numero={12}
+              titulo="Criar o componente Rodape"
+              descricao="Isolada a estrutura do rodapé em Rodape.jsx com cálculo dinâmico do ano corrente em JavaScript e link interno para retorno suave ao topo."
+              tecnologia="React / JSX"
+              imagem="https://via.placeholder.com/286x180?text=Componente+Rodape"
+            />
 
-            {/*Card 10*/}
-            <article className="card">
-              <div className="card-image">
-                <img src="https://via.placeholder.com/286x180?text=Responsividade" alt="Evidência do Passo 10" />
-              </div>
-              <div className="card-body">
-                <h3>Passo 10: Tornar a homepage responsiva</h3>
-                <p>Implementadas media queries para adaptar o layout em telas de 360px, 768px e 1440px, ajustando o menu, perfil e a grade de cartões sem quebras de layout.</p>
-                <div className="card-footer">
-                  <span className="card-tech">Tecnologia: CSS3 Media Queries</span>
-                </div>
-              </div>
-            </article>
-
-
-            {/* Card 11 */}
-            <article className="card">
-              <div className="card-image">
-                <img src="https://via.placeholder.com/286x180?text=Componente+Cabecalho" alt="Evidência do Passo 11" />
-              </div>
-              <div className="card-body">
-                <h3>Passo 11: Criar o componente Cabecalho</h3>
-                <p>Estrutura do cabeçalho isolada em src/components/Cabecalho.jsx, reduzindo o acoplamento no App.jsx e promovendo reuso e organização do código.</p>
-                <div className="card-footer">
-                  <span className="card-tech">Tecnologia: React / JSX</span>
-                </div>
-              </div>
-            </article>
+            <CardAtividade
+              numero={13}
+              titulo="Criar o componente CardAtividade"
+              descricao="Cartão transformado em componente dinâmico reutilizável, recebendo numero, titulo, descricao, tecnologia e imagem através de props."
+              tecnologia="React / Props"
+              imagem="https://via.placeholder.com/286x180?text=Componente+CardAtividade"
+            />
           </div>
         </section>
 
@@ -190,10 +135,8 @@ function App() {
         </section>
       </main>
 
-      {/* Rodape da pagina */}
-      <footer>
-        <p>&copy; 2026 - Todos os direitos reservados</p>
-      </footer>
+      {/*Componente de Rodapé*/}
+      <Rodape />
     </div>
   );
 }
