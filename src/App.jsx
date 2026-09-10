@@ -6,6 +6,7 @@ import Cabecalho from './components/Cabecalho';
 import Rodape from './components/Rodape';
 import CardAtividade from './components/CardAtividade';
 import ModalAtividade from './components/ModalAtividade';
+import Contato from './components/Contato';
 import { atividades } from './data/atividades';
 
 function App() {
@@ -110,13 +111,10 @@ function App() {
           <p>Seção reservada para informações detalhadas do perfil e competências.</p>
         </section>
 
-        <section id="contato">
-          <h2>Contato</h2>
-          <p>Seção reservada para o formulário de contato.</p>
-        </section>
+        {/* Componente do Formulário de Contato */}
+        <Contato />
       </main>
 
-      {/* Renderização do Modal */}
       <ModalAtividade 
         atividade={atividadeSelecionada} 
         onClose={() => setAtividadeSelecionada(null)} 

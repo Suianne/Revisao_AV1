@@ -189,5 +189,14 @@ export const atividades = [
     tecnologia: "React / Acessibilidade",
     imagem: "https://via.placeholder.com/286x180?text=Modal+de+Detalhes",
     status: "Concluída"
+  },
+  {
+    id: 22,
+    numero: 22,
+    titulo: "Criar formulário de contato",
+    descricao: "Implementação de formulário interativo com campos controlados, validação nativa, prevenção do recarregamento de página e mensagem de confirmação simulada.",
+    tecnologia: "React / Forms",
+    imagem: "https://via.placeholder.com/286x180?text=Formulario+de+Contato",
+    status: "Concluída"
   }
 ]
