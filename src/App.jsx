@@ -8,6 +8,7 @@ import CardAtividade from './components/CardAtividade';
 import ModalAtividade from './components/ModalAtividade';
 import Contato from './components/Contato';
 import { atividades } from './data/atividades';
+import Sobre from './components/Sobre';
 
 function App() {
   const [filtro, setFiltro] = useState('Todos');
@@ -126,10 +127,7 @@ function App() {
           )}
         </section>
 
-        <section id="sobre">
-          <h2>Sobre</h2>
-          <p>Seção reservada para informações detalhadas do perfil e competências.</p>
-        </section>
+        <Sobre />
 
         <Contato />
       </main>

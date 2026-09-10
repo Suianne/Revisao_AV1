@@ -216,5 +216,14 @@ export const atividades = [
     tecnologia: "React / LocalStorage",
     imagem: "https://via.placeholder.com/286x180?text=Persistencia+Local",
     status: "Concluída"
+  },
+  {
+    id: 25,
+    numero: 25,
+    titulo: "Adicionar seção Sobre",
+    descricao: "Criação de componente institucional apresentando o objetivo profissional, lista detalhada com nível de domínio das tecnologias praticadas e links externos direcionados.",
+    tecnologia: "React / JSX",
+    imagem: "https://via.placeholder.com/286x180?text=Secao+Sobre",
+    status: "Concluída"
   }
 ]
