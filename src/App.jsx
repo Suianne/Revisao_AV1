@@ -9,6 +9,7 @@ import ModalAtividade from './components/ModalAtividade';
 import Contato from './components/Contato';
 import { atividades } from './data/atividades';
 import Sobre from './components/Sobre';
+import AcessibilidadeVerificacoes from './components/AcessibilidadeVerificacoes';
 
 function App() {
   const [filtro, setFiltro] = useState('Todos');

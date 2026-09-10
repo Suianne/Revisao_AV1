@@ -234,5 +234,14 @@ export const atividades = [
     tecnologia: "a11y / HTML Semântico",
     imagem: "https://via.placeholder.com/286x180?text=Revisao+de+Acessibilidade",
     status: "Concluída"
+  },
+  {
+    id: 27,
+    numero: 27,
+    titulo: "Criar o README do repositório",
+    descricao: "Documentação completa no arquivo README.md contendo instruções de instalação, comandos de execução, arquitetura de arquivos, pré-requisitos e links de entrega.",
+    tecnologia: "Markdown / Git",
+    imagem: "https://via.placeholder.com/286x180?text=Documentacao+README",
+    status: "Concluída"
   }
 ]

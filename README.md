@@ -1,16 +1,61 @@
-# React + Vite
+# Portfólio de Atividades em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Uma aplicação web desenvolvida em React para catalogar, filtrar e demonstrar a evolução de 30 atividades práticas no ecossistema de desenvolvimento web front-end.
 
-Currently, two official plugins are available:
+## 🔗 Links do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*   **Repositório GitHub:** [https://github.com/usuario/seu-repositorio](https://github.com/usuario/seu-repositorio)
+*   **Aplicação em Produção (Vercel):** [https://seu-projeto.vercel.app](https://seu-projeto.vercel.app)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tecnologias Utilizadas
 
-## Expanding the Oxlint configuration
+*   **React** (Vite / Create React App)
+*   **JavaScript (ES6+)**
+*   **CSS3** (Variáveis CSS, Flexbox, CSS Grid e Temas)
+*   **HTML5** (Semântica e Acessibilidade/a11y)
+*   **Git & GitHub**
+*   **Vercel** (Hospedagem)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+---
+
+## ⚙️ Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado em sua máquina:
+*   [Node.js](https://nodejs.org/) (Versão 18 ou superior)
+*   [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+*   [Git](https://git-scm.com/)
+
+---
+
+## 🚀 Como Executar o Projeto
+
+1. **Clonar o repositório:**
+   ```bash
+   git clone [https://github.com/usuario/seu-repositorio.git](https://github.com/usuario/seu-repositorio.git)
+
+## 📁 Estrutura do Projeto
+
+```text
+Revisao_AV1/
+├── public/
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── AcessibilidadeVerificacoes.jsx
+│   │   ├── Cabecalho.jsx
+│   │   ├── CardAtividade.jsx
+│   │   ├── Contato.jsx
+│   │   ├── ModalAtividade.jsx
+│   │   ├── Rodape.jsx
+│   │   └── Sobre.jsx
+│   ├── data/
+│   │   └── atividades.js
+│   ├── App.css
+│   ├── App.jsx
+│   └── main.jsx
+├── .gitignore
+├── index.html
+├── package.json
+└── README.md
