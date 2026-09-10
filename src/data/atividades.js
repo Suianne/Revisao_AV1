@@ -143,7 +143,6 @@ export const atividades = [
     imagem: "https://via.placeholder.com/286x180?text=Status+Condicional",
     status: "Concluído"
   },
-
   {
     id: 17,
     numero: 17,
