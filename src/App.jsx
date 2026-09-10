@@ -163,7 +163,20 @@ function App() {
                 </div>
               </div>
             </article>
-            
+
+            {/*Card 10*/}
+            <article className="card">
+              <div className="card-image">
+                <img src="https://via.placeholder.com/286x180?text=Responsividade" alt="Evidência do Passo 10" />
+              </div>
+              <div className="card-body">
+                <h3>Passo 10: Tornar a homepage responsiva</h3>
+                <p>Implementadas media queries para adaptar o layout em telas de 360px, 768px e 1440px, ajustando o menu, perfil e a grade de cartões sem quebras de layout.</p>
+                <div className="card-footer">
+                  <span className="card-tech">Tecnologia: CSS3 Media Queries</span>
+                </div>
+              </div>
+            </article>
           </div>
         </section>
 
