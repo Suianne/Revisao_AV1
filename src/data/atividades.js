@@ -1,7 +1,12 @@
 import ambiente from '../assets/ambiente-virtual.jpg';
-import git from '../assets/git-repositorio.jpg';
-import semantica from '../assets/semantica.jpg';
-
+import git from '../assets/git_img.jpeg';
+import cabecalho from '../assets/cabecalho.jpeg';
+import htmlCss from '../assets/html_css.png';
+import css from '../assets/css.png';
+import htmlCssReact from '../assets/html_css_react.png';
+import react from '../assets/react.png';
+import js from '../assets/js.png';
+import vercel from '../assets/vercel.png'
 
 
 export const atividades = [
@@ -29,7 +34,7 @@ export const atividades = [
         titulo: "Construir a estrutura semântica",
         descricao: "Aplicação organizada utilizando as tags HTML semânticas header, nav, main, section, article e footer, garantindo hierarquia e acessibilidade.",
         tencnologia: "HTML / JSX",
-        imagem: semantica,
+        imagem: htmlCss,
         status: "Concluída"
     },
     {
@@ -38,7 +43,7 @@ export const atividades = [
         titulo: "Criar cabeçalho e identidade",
         descricao: "Adicionado cabeçalho completo com nome do autor, turma, avatar, texto descritivo e botão de ação para navegação rápida até a lista de entregas.",
         tencnologia: "HTML / CSS",
-        imagem: "https://via.placeholder.com/286x180?text=Cabeçalho+e+Identidade",
+        imagem: htmlCss,
         status: "Concluída"
     },
     {
@@ -47,7 +52,7 @@ export const atividades = [
         titulo: "Criar menu de navegação",
         descricao: "Implementado menu com links de âncora internos.",
         tencnologia: "HTML / CSS",
-        imagem: "https://via.placeholder.com/286x180?text=Cabeçalho+e+Identidade",
+        imagem: htmlCss,
         status: "Concluída"
     },
     {
@@ -55,8 +60,8 @@ export const atividades = [
         numero: 6,
         titulo: "Definir o sistema visual em CSS",
         descricao: "Configuradas variáveis CSS em :root para paleta de cores, espaçamentos e sombras, além de reset global com box-sizing e tipografia padrão.",
-        tencnologia: "CSS3",
-        imagem: "https://via.placeholder.com/286x180?text=Cartão+de+Atividades",
+        tencnologia: "CSS",
+        imagem: css,
         status: "Concluída"
     },
     {
@@ -65,7 +70,7 @@ export const atividades = [
         titulo: "Construir cartões de atividades",
         descricao: "Estilização visual completa desenvolvida para os componentes de cartão, com transições para hover, bordas com foco para navegação por teclado e alto contraste.",
         tencnologia: "CSS3",
-        imagem: "https://via.placeholder.com/286x180?text=Cartão+de+Atividades",
+        imagem: htmlCss,
         status: "Concluída"
     },
     {
@@ -74,7 +79,7 @@ export const atividades = [
         titulo: "Organizar o layout com Flexbox",
         descricao: "Aplicado Flexbox para alinhar e distribuir elementos no cabeçalho, perfil e menu de navegação, utilizando justify-content, align-items e gap.",
         tencnologia: "CSS3 Flexbox",
-        imagem: "https://via.placeholder.com/286x180?text=Flexbox+Layout",
+        imagem: htmlCss,
         status: "Concluída"
     },
     {
@@ -83,7 +88,7 @@ export const atividades = [
         titulo: "Organizar atividades com CSS Grid",
         descricao: "Aplicado CSS Grid na seção de entregas utilizando repeat(auto-fit, minmax(280px, 1fr)) para distribuir os cartões de forma fluida e sem largura fixa.",
         tencnologia: "CSS3 Grid",
-        imagem: "https://via.placeholder.com/286x180?text=CSS+Grid",
+        imagem: css,
         status: "Concluída"
     },
     {
@@ -92,7 +97,7 @@ export const atividades = [
         titulo: "Tornar a homepage responsiva",
         descricao: "Implementadas media queries para adaptar o layout em telas de 360px, 768px e 1440px, ajustando o menu, perfil e a grade de cartões sem quebras de layout.",
         tencnologia: "CSS3 Media Queries",
-        imagem: "https://via.placeholder.com/286x180?text=Responsividade",
+        imagem: css,
         status: "Concluída"
     },
     {
@@ -101,7 +106,7 @@ export const atividades = [
         titulo: "Criar o componente Cabecalho",
         descricao: "Estrutura do cabeçalho isolada em src/components/Cabecalho.jsx, reduzindo o acoplamento no App.jsx e promovendo reuso e organização do código.",
         tencnologia: "React / JSX",
-        imagem: "https://via.placeholder.com/286x180?text=Componente+Cabecalho",
+        imagem: htmlCssReact,
         status: "Concluída"
     },
     {
@@ -110,7 +115,7 @@ export const atividades = [
         titulo: "Criar o componente Rodapé",
         descricao: "Isolada a estrutura do rodapé em Rodape.jsx com cálculo dinâmico do ano corrente em JavaScript e link interno para retorno suave ao topo.",
         tencnologia: "React / JSX",
-        imagem: "https://via.placeholder.com/286x180?text=Componente+Rodape",
+        imagem: htmlCssReact,
         status: "Concluída"
     },
     {
@@ -119,7 +124,7 @@ export const atividades = [
         titulo: "Criar o componente CardAtividade",
         descricao: "Cartão transformado em componente dinâmico reutilizável, recebendo numero, titulo, descricao, tecnologia e imagem através de props.",
         tencnologia: "React / Props",
-        imagem: "https://via.placeholder.com/286x180?text=Componente+CardAtividade",
+        imagem: react,
         status: "Concluída"
     },
     {
@@ -127,8 +132,8 @@ export const atividades = [
         numero: 14,
         titulo: "Modelar os dados das atividades",
         descricao: "Separação de dados e apresentação criando o arquivo de mock em src/data/atividades.js.",
-        tencnologia: "JavaScript / ES6",
-        imagem: "https://via.placeholder.com/286x180?text=Modelagem+de+Dados",
+        tencnologia: "JavaScript",
+        imagem: js,
         status: "Concluída"
     },
     {
@@ -137,7 +142,7 @@ export const atividades = [
         titulo: "Renderizar a lista com map",
         descricao: "Substituição da renderização estática pelo método .map() iterando sobre o array de dados com key única.",
         tencnologia: "React / JSX",
-        imagem: "https://via.placeholder.com/286x180?text=Renderizacao+Map",
+        imagem: react,
         status: "Concluída"
     },
     {
@@ -146,7 +151,7 @@ export const atividades = [
     titulo: "Mostrar status condicional",
     descricao: "Aplicação de renderização condicional exibindo se a atividade está Concluída, Em andamento ou Planejada com estilos visuais próprios.",
     tecnologia: "React / CSS",
-    imagem: "https://via.placeholder.com/286x180?text=Status+Condicional",
+    imagem: htmlCss,
     status: "Concluído"
   },
   {
@@ -155,7 +160,7 @@ export const atividades = [
     titulo: "Criar filtro por tecnologia",
     descricao: "Controle da exibição dos cartões através de useState sem modificar o array original de dados.",
     tecnologia: "React / State",
-    imagem: "https://via.placeholder.com/286x180?text=Filtro+Tecnologia",
+    imagem: react,
     status: "Concluída"
   },
 
@@ -165,7 +170,7 @@ export const atividades = [
     titulo: "Criar busca por texto",
     descricao: "Implementação de campo de busca controlado para filtragem de atividades por título ou descrição sem case-sensitivity, com feedback visual para busca sem resultados.",
     tecnologia: "React / State",
-    imagem: "https://via.placeholder.com/286x180?text=Busca+por+Texto",
+    imagem: react,
     status: "Concluída"
   },
 
@@ -175,7 +180,7 @@ export const atividades = [
     titulo: "Criar contador de progresso",
     descricao: "Cálculo e exibição automática do progresso das atividades concluídas diretamente do array de dados, sem uso redundante de estado.",
     tecnologia: "React / JavaScript",
-    imagem: "https://via.placeholder.com/286x180?text=Contador+Progresso",
+    imagem: js,
     status: "Concluída"
   },
   {
@@ -184,7 +189,7 @@ export const atividades = [
     titulo: "Criar barra de progresso",
     descricao: "Implementação de barra de progresso visual e acessível (com atributos ARIA), sincronizada com o cálculo de atividades concluídas.",
     tecnologia: "React / HTML5 ARIA",
-    imagem: "https://via.placeholder.com/286x180?text=Barra+de+Progresso",
+    imagem: htmlCssReact,
     status: "Concluída"
   },
   {
@@ -192,8 +197,8 @@ export const atividades = [
     numero: 21,
     titulo: "Criar modal de detalhes",
     descricao: "Desenvolvimento de modal interativo para exibição detalhada da atividade, com suporte a fechamento via tecla Escape, clique externo e controle de foco acessível.",
-    tecnologia: "React / Acessibilidade",
-    imagem: "https://via.placeholder.com/286x180?text=Modal+de+Detalhes",
+    tecnologia: "React",
+    imagem: react,
     status: "Concluída"
   },
   {
@@ -202,7 +207,7 @@ export const atividades = [
     titulo: "Criar formulário de contato",
     descricao: "Implementação de formulário interativo com campos controlados, validação nativa, prevenção do recarregamento de página e mensagem de confirmação simulada.",
     tecnologia: "React / Forms",
-    imagem: "https://via.placeholder.com/286x180?text=Formulario+de+Contato",
+    imagem: react,
     status: "Concluída"
   },
   {
@@ -211,7 +216,7 @@ export const atividades = [
     titulo: "Implementar alternância de tema",
     descricao: "Controle de preferência visual entre modo claro e escuro via estado, aplicando atributos dinâmicos CSS que mantêm contraste e acessibilidade de foco.",
     tecnologia: "React / CSS Variables",
-    imagem: "https://via.placeholder.com/286x180?text=Alternancia+de+Tema",
+    imagem: react,
     status: "Concluída"
   },
   {
@@ -220,7 +225,7 @@ export const atividades = [
     titulo: "Persistir preferência local",
     descricao: "Mapeamento e recuperação do tema ativo usando localStorage sob a chave 'portfolio_tema', garantindo a restauração da escolha do usuário com fallback padrão 'light'.",
     tecnologia: "React / LocalStorage",
-    imagem: "https://via.placeholder.com/286x180?text=Persistencia+Local",
+    imagem: react,
     status: "Concluída"
   },
   {
@@ -229,7 +234,7 @@ export const atividades = [
     titulo: "Adicionar seção Sobre",
     descricao: "Criação de componente institucional apresentando o objetivo profissional, lista detalhada com nível de domínio das tecnologias praticadas e links externos direcionados.",
     tecnologia: "React / JSX",
-    imagem: "https://via.placeholder.com/286x180?text=Secao+Sobre",
+    imagem: react,
     status: "Concluída"
   },
   {
@@ -238,7 +243,7 @@ export const atividades = [
     titulo: "Revisar acessibilidade",
     descricao: "Auditoria e correções de acessibilidade: hierarquia de headings, suporte a foco visível, rótulos explícitos, textos alt contextuais e redundância textual para elementos coloridos.",
     tecnologia: "a11y / HTML Semântico",
-    imagem: "https://via.placeholder.com/286x180?text=Revisao+de+Acessibilidade",
+    imagem: htmlCss,
     status: "Concluída"
   },
   {
@@ -247,7 +252,7 @@ export const atividades = [
     titulo: "Criar o README do repositório",
     descricao: "Documentação completa no arquivo README.md contendo instruções de instalação, comandos de execução, arquitetura de arquivos, pré-requisitos e links de entrega.",
     tecnologia: "Markdown / Git",
-    imagem: "https://via.placeholder.com/286x180?text=Documentacao+README",
+    imagem: git,
     status: "Concluída"
   },
   {
@@ -256,7 +261,7 @@ export const atividades = [
     titulo: "Organizar o histórico Git",
     descricao: "Revisão do repositório, validação do histórico de commits e criação da tag local v1.0.0 para marcar o lançamento da primeira versão estável do portfólio.",
     tecnologia: "Git / Tagging",
-    imagem: "https://via.placeholder.com/286x180?text=Tag+v1.0.0",
+    imagem: git,
     status: "Concluída"
   },
   {
@@ -265,7 +270,7 @@ export const atividades = [
     titulo: "Enviar o projeto ao repositório remoto",
     descricao: "Conexão do repositório local ao GitHub (remote origin) e envio completo do código-fonte da branch main juntamente com a tag de versão v1.0.0.",
     tecnologia: "Git / GitHub",
-    imagem: "https://via.placeholder.com/286x180?text=Push+GitHub",
+    imagem: git,
     status: "Concluída"
   },
   {
@@ -274,7 +279,7 @@ export const atividades = [
     titulo: "Publicar e validar na Vercel",
     descricao: "Projeto publicado e validado em ambiente de produção na Vercel. Checklist final concluído com sucesso: menu de navegação, filtros por tecnologia, busca por texto, modal de detalhes, formulário de contato e responsividade em diferentes telas.",
     tecnologia: "Vercel",
-    imagem: "https://via.placeholder.com/286x180?text=Vercel+Deploy",
+    imagem: vercel,
     status: "Concluída",
     link: "https://seu-projeto.vercel.app"
   }
