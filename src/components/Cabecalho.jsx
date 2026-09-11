@@ -1,8 +1,10 @@
+import fotoPerfil from '../assets/foto.jpg';
+    
 function Cabecalho() {
     return(
         <header>
             <div className="perfil">
-                <img src="https://via.placeholder.com/100" alt="Foto de perfil" className="avatar"/>
+                <img src={fotoPerfil} alt="Foto de perfil" className="avatar"/>
                 <div>
                     <h1>Suianne Costa Ramos Martins</h1>
                     <p>Aluna de Desenvolvimento Fullstack | Turma 2026.1</p>

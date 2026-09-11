@@ -1,3 +1,9 @@
+import ambiente from '../assets/ambiente-virtual.jpg';
+import git from '../assets/git-repositorio.jpg';
+import semantica from '../assets/semantica.jpg';
+
+
+
 export const atividades = [
     {
         id: 1,
@@ -5,7 +11,7 @@ export const atividades = [
         titulo: "Preparar ambiente",
         descricao: "Versão do node: v24.16.0 | Versão do npm: 9.8.0 | Versão do git: 2.54.0.windows.1",
         tencnologia: "React / Vite",
-        imagem: "https://via.placeholder.com/286x180?text=Ambiente",
+        imagem: ambiente,
         status: "Concluída"
     },
     {
@@ -14,7 +20,7 @@ export const atividades = [
         titulo: "Inicializar o repositório Git",
         descricao: "Repositório iniciado com git init, arquivo .gitignore configurado para ignorar node_modules e dist, e branch principal definida como main.",
         tencnologia: "Git",
-        imagem: "https://via.placeholder.com/286x180?text=Git+Init",
+        imagem: git,
         status: "Concluída"
     },
     {
@@ -23,7 +29,7 @@ export const atividades = [
         titulo: "Construir a estrutura semântica",
         descricao: "Aplicação organizada utilizando as tags HTML semânticas header, nav, main, section, article e footer, garantindo hierarquia e acessibilidade.",
         tencnologia: "HTML / JSX",
-        imagem: "https://via.placeholder.com/286x180?text=HTML+Semantico",
+        imagem: semantica,
         status: "Concluída"
     },
     {
@@ -261,5 +267,15 @@ export const atividades = [
     tecnologia: "Git / GitHub",
     imagem: "https://via.placeholder.com/286x180?text=Push+GitHub",
     status: "Concluída"
+  },
+  {
+    id: 30,
+    numero: 30,
+    titulo: "Publicar e validar na Vercel",
+    descricao: "Projeto publicado e validado em ambiente de produção na Vercel. Checklist final concluído com sucesso: menu de navegação, filtros por tecnologia, busca por texto, modal de detalhes, formulário de contato e responsividade em diferentes telas.",
+    tecnologia: "Vercel",
+    imagem: "https://via.placeholder.com/286x180?text=Vercel+Deploy",
+    status: "Concluída",
+    link: "https://seu-projeto.vercel.app"
   }
 ]
